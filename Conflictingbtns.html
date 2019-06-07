@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Conflicting buttons </h1>
+<div class = "double-btns">
+
+
+  <p>Click the I`m Right button to trigger a function that will output "I`m Right" in a p element with id="button1".
+  Click the No I`m Right button to trigger a function that will output "No I`m Right" in a p element with id="button2"</p>
+
+  <button onclick="myFunction()">I`m Right</button>
+  <button onclick="myFunction1()">No I`m Right</button>
+  <p id="button1"></p>
+
+  <p id="button2"></p>
+
+
+
+  <script>
+  function myFunction() {
+    document.getElementById("button2").innerHTML = "I`m Right";
+  }
+  </script>
+  <script>
+    function myFunction1() {
+      document.getElementById("button2").innerHTML = "No I`m Right";
+    }
+    </script>
+
+
+</div>
+</body>
+</html>
